@@ -531,9 +531,11 @@ void plotPtMoreNewEPEM(bool bSavePlots       = 1,
 		float BsFracEPEM = 10.1;
 		float BsFracEPEMError = 0.8;
 		
-		float BsBPEPEM = BsFracEPEM/BPFracEPEM;
-		float BsBPEPEMError = BsBPEPEM *  TMath::Sqrt(BPFracEPEMError/BPFracEPEM * BPFracEPEMError/BPFracEPEM  + BsFracEPEMError/BsFracEPEM  * BsFracEPEMError/BsFracEPEM );
+//		float BsBPEPEM = BsFracEPEM/BPFracEPEM;
+//		float BsBPEPEMError = BsBPEPEM *  TMath::Sqrt(BPFracEPEMError/BPFracEPEM * BPFracEPEMError/BPFracEPEM  + BsFracEPEMError/BsFracEPEM  * BsFracEPEMError/BsFracEPEM );
 
+		float BsBPEPEM = 0.246;
+		float BsBPEPEMError = 0.023;
 
 		TLine *EPEM = new TLine(5,BsBPEPEM,50,BsBPEPEM);
 		EPEM->SetLineStyle(1);
