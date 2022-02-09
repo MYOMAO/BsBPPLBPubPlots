@@ -534,7 +534,7 @@ void plotPtMoreNewEPEM(bool bSavePlots       = 1,
 //		float BsBPEPEM = BsFracEPEM/BPFracEPEM;
 //		float BsBPEPEMError = BsBPEPEM *  TMath::Sqrt(BPFracEPEMError/BPFracEPEM * BPFracEPEMError/BPFracEPEM  + BsFracEPEMError/BsFracEPEM  * BsFracEPEMError/BsFracEPEM );
 
-		float BsBPEPEM = 0.246;
+		float BsBPEPEM = 0.249;
 		float BsBPEPEMError = 0.023;
 
 		TLine *EPEM = new TLine(5,BsBPEPEM,50,BsBPEPEM);
@@ -974,8 +974,8 @@ void plotPtMoreNewEPEM(bool bSavePlots       = 1,
 				pc1->SaveAs(Form("%s/pdf/xsec_vsPt.pdf",outputDir));
 				pc1->SaveAs(Form("%s/png/xsec_vsPt.png",outputDir));
 			}else{
-				pc1->SaveAs(Form("%s/pdf/ratio_vsPt_ref%d_%d.pdf",outputDir,drawRef,drawlhcb));
-				pc1->SaveAs(Form("%s/png/ratio_vsPt_ref%d_%d.png",outputDir,drawRef,drawlhcb));
+				pc1->SaveAs(Form("%s/pdf/ratio_vsPt_ref%d_%dEPEM.pdf",outputDir,drawRef,drawlhcb));
+				pc1->SaveAs(Form("%s/png/ratio_vsPt_ref%d_%dEPEM.png",outputDir,drawRef,drawlhcb));
 			}
 		}
 

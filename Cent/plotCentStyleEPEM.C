@@ -358,7 +358,7 @@ void plotCentStyleEPEM(bool bSavePlots     = 1,
 //		float BsBPEPEM = BsFracEPEM/BPFracEPEM;
 //		float BsBPEPEMError = BsBPEPEM *  TMath::Sqrt(BPFracEPEMError/BPFracEPEM * BPFracEPEMError/BPFracEPEM  + BsFracEPEMError/BsFracEPEM  * BsFracEPEMError/BsFracEPEM ); Old Values
 
-		float BsBPEPEM = 0.246;
+		float BsBPEPEM = 0.249;
 		float BsBPEPEMError = 0.023;
 
 		TLine *EPEM = new TLine(0,BsBPEPEM,380,BsBPEPEM);
