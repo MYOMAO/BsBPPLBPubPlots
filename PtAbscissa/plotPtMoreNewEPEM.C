@@ -518,7 +518,7 @@ void plotPtMoreNewEPEM(bool bSavePlots       = 1,
 		SFLTheorypp->SetLineWidth(3);
 		SFLTheorypp->SetMarkerColor(kCyan+1);
 		SFLTheorypp->SetLineColor(kCyan+1);
-		SFLTheorypp->SetLineStyle(2);
+		SFLTheorypp->SetLineStyle(1);
 
 
 
